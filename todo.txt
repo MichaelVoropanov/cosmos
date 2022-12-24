@@ -1,4 +1,5 @@
 Bug Fixes:
     Fix About Link
+    Fix White Logo not showing after scroll down
 
 Features:
