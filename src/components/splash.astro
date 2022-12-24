@@ -5,7 +5,7 @@ import astronautImage from "~/assets/astronaut.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
-
+import "../styles/arrows.css";
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
@@ -16,18 +16,22 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
+    <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+
   <div class="relative grid h-full place-items-center sm:grid-cols-2">
     <h2
       class="flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
       <Icon name="logomark" class="h-24 text-white md:h-32" />
       <div
-        class="gradient-text text-center font-extrabold tracking-tighter text-7xl"
-      >
-        Change 
-        <br />The World
-        <br /> One Line 
-        <br /> At A Time
+        class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
+      > Change the world
+        <br />
+        <br /> 
       </div>
     </h2>
     <div
